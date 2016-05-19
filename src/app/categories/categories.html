@@ -1,0 +1,36 @@
+<div class="container">
+
+  <div>
+    <acme-navbar></acme-navbar>
+  </div>
+
+  <div class="col-md-12">
+    <form class="form-horizontal">
+      <div class="form-group">
+	  <div >
+      <label for="inputCat">New Category:</label>
+      <input ng-model="cat" id="inputCat" placeholder="Category">
+	   </div>
+	   </div>
+	   </form>
+	   <button type="button" ng-click="categories.addCategory(cat)" class="btn btn-success">Add Category</button>
+	    </div>
+		
+  <div class="row" ng-repeat="(key, category) in categories.cats">
+   <div class="col-md-4">   
+      <h3>{{key}}-{{category}}</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+     </div> 
+<div class="col-md-4">
+      
+	  
+    </div>	
+  </div>
+
+
+
+    
+
+  
+
+</div>
